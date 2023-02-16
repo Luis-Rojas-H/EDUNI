@@ -1,3 +1,3 @@
 <?php
-    header("Location:http://localhost/EDUNI/index.html"); 
+    header("Location:http://localhost/EDUNI/index.php"); 
 ?>

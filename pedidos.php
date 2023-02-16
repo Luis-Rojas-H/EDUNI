@@ -36,15 +36,15 @@
         <div class="col-4">
           <ul class="navbar-nav login-menu text-decoration-underline">
             <li class="navbar-perfil cuenta">
-              <a href="./pedidos.html">
+              <a href="./pedidos.php">
                 <img src="img/icono perfil.png" class="d-inline-block align-text-top">
               </a>
             </li>
             <li class="nav-item cuenta">
-              <a class="nav-link color" href="./login.html">Iniciar sesión</a>
+              <a class="nav-link color" href="./login.php">Iniciar sesión</a>
             </li>
             <li class="nav-item cuenta">
-              <a class="nav-link color" href="./register.html">Regístrate</a>
+              <a class="nav-link color" href="./register.php">Regístrate</a>
             </li>
           </ul>
         </div>
@@ -61,29 +61,29 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link color-menu" href="./index.html">Inicio</a>
+            <a class="nav-link color-menu" href="./inicio.php">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link color-menu" href="./libros.html">Libros</a>
+            <a class="nav-link color-menu" href="./libros.php">Libros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link color-menu" href="./envios.html">Envíos</a>
+            <a class="nav-link color-menu" href="./envios.php">Envíos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link color-menu" href="./preguntas.html">Preguntas frecuentes</a>
+            <a class="nav-link color-menu" href="./preguntas.php">Preguntas frecuentes</a>
           </li>     
           <li class="nav-item">
-            <a class="nav-link color-menu" href="./novedades.html">Novedades</a>
+            <a class="nav-link color-menu" href="./novedades.php">Novedades</a>
           </li>
         </ul>
         <ul class="navbar-nav me-5 mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link color-menu" href="./pedidos.html">
+            <a class="nav-link color-menu" href="./pedidos.php">
               <img src="img/icono_favoritos.png" alt=""> Favoritos
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link color-menu" href="./carrito.html">
+            <a class="nav-link color-menu" href="./carrito.php">
               <img src="img/icono carrito-compras.png" alt="">
             </a>
           </li>

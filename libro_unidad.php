@@ -39,10 +39,10 @@
                             <img src="img/icono perfil.png" class="d-inline-block align-text-top">
                         </li>
                         <li class="nav-item cuenta">
-                            <a class="nav-link color" href="./login.html">Iniciar sesión</a>
+                            <a class="nav-link color" href="./login.php">Iniciar sesión</a>
                         </li>
                         <li class="nav-item cuenta">
-                            <a class="nav-link color" href="./register.html">Regístrate</a>
+                            <a class="nav-link color" href="./register.php">Regístrate</a>
                         </li>
                     </ul>
                 </div>
@@ -59,19 +59,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav list-inline mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link color-menu" href="./index.html">Inicio</a>
+                        <a class="nav-link color-menu" href="./inicio.php">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link color-menu" href="./libros.html">Libros</a>
+                        <a class="nav-link color-menu" href="./libros.php">Libros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link color-menu" href="./envios.html">Envíos</a>
+                        <a class="nav-link color-menu" href="./envios.php">Envíos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link color-menu" href="./preguntas.html">Preguntas frecuentes</a>
+                        <a class="nav-link color-menu" href="./preguntas.php">Preguntas frecuentes</a>
                     </li>     
                     <li class="nav-item">
-                        <a class="nav-link color-menu" href="./novedades.html">Novedades</a>
+                        <a class="nav-link color-menu" href="./novedades.php">Novedades</a>
                     </li>
                 </ul>
             </div>

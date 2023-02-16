@@ -5,7 +5,7 @@ $email = strtoupper($_POST["email_uni"]);
 $clave = $_POST["pass_uni"];
 
 function error(){
-    header("Location:http://localhost/EDUNI/index.html?error=1");
+    header("Location:http://localhost/EDUNI/index.php?error=1");
 }
 
 function comprueba($email,$clave){
@@ -25,14 +25,14 @@ function comprueba($email,$clave){
 
                 $_SESSION['name_usuario']=$data['email_uni'];
 
-                header("Location:../../ingreso.php");
+                header("Location:../../inicio.php");
             }
 
             mysqli_free_result($result);
             
         } else{
             mysqli_error($conexion);
-            header("Location:http://localhost/EDUNI/index.html?error=1"); 
+            header("Location:http://localhost/EDUNI/index.php?error=1"); 
         }
     } else {
         echo "ERROR: Could not able to execute $sql. " . mysqli_error($conexion);

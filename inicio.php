@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
-    <!-- Mi estilo CSS -->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/pedidos.css">
+  <!-- Mi estilo CSS -->
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/pedidos.css">
 
 
-    <!-- Imagen del logo y título -->
-    <link rel="icon" href="img/icono inicio.png">
-    <title>EDUNI - Tienda Virtual</title>
-  </head>
+  <!-- Imagen del logo y título -->
+  <link rel="icon" href="img/icono inicio.png">
+  <title>EDUNI - Tienda Virtual</title>
+</head>
 
 <body>
   <!-- Navigation-->
@@ -36,15 +36,15 @@
         <div class="col-4">
           <ul class="navbar-nav login-menu text-decoration-underline">
             <li class="navbar-perfil cuenta">
-              <a href="./pedidos.html">
+              <a href="./pedidos.php">
                 <img src="img/icono perfil.png" class="d-inline-block align-text-top">
               </a>
             </li>
             <li class="nav-item cuenta">
-              <a class="nav-link color" href="./login.html">Iniciar sesión</a>
+              <a class="nav-link color" href="./login.php">Iniciar sesión</a>
             </li>
             <li class="nav-item cuenta">
-              <a class="nav-link color" href="./register.html">Regístrate</a>
+              <a class="nav-link color" href="./register.php">Regístrate</a>
             </li>
           </ul>
         </div>
@@ -61,29 +61,36 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link color-menu" href="./index.html">Inicio</a>
+            <a class="nav-link color-menu" href="./inicio.php">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link color-menu" href="./libros.html">Libros</a>
+            <a class="nav-link color-menu" href="./libros.php">Libros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link color-menu" href="./envios.html">Envíos</a>
+            <a class="nav-link color-menu" href="./envios.php">Envíos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link color-menu" href="./preguntas.html">Preguntas frecuentes</a>
+            <a class="nav-link color-menu" href="./preguntas.php">Preguntas frecuentes</a>
           </li>     
           <li class="nav-item">
-            <a class="nav-link color-menu" href="./novedades.html">Novedades</a>
+            <a class="nav-link color-menu" href="./novedades.php">Novedades</a>
           </li>
         </ul>
         <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+          <?php
+            session_start();
+            if(isset($_SESSION['logueado']) && isset($_SESSION['id'])){
+          ?>
           <li class="nav-item">
-            <a class="nav-link color-menu" href="./favoritos.html">
+            <a class="nav-link color-menu" href="./favoritos.php">
               <img src="img/icono_favoritos.png" alt=""> Favoritos
             </a>
           </li>
+          <?php
+            }
+          ?>
           <li class="nav-item">
-            <a class="nav-link color-menu" href="./carrito.html">
+            <a class="nav-link color-menu" href="./carrito.php">
               <img src="img/icono carrito-compras.png" alt="">
             </a>
           </li>
